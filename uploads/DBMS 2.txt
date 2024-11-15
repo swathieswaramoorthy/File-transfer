@@ -1,0 +1,29 @@
+EXPERIMENT2
+1.  create table PRODUCT (product_id int,vendor_id int,product_name varchar(200),price int,quantity int,expiry_date               varchar(200))
+    create table vendor(ven_id int,vendor_name varchar(50),vendor_location varchar(50))
+2.  insert into PRODUCT (product_id ,vendor_id ,product_name ,price ,quantity ,expiry_date )values(1,001,'Soap',90,2,2024)
+    select * from product
+3.  insert into product(product_name,price,quantity) values('glue',10,5)
+4.  insert all
+    into product(product_name ,price ,quantity  )values('mango',20,10)
+    into product(product_name ,price ,quantity  )values('curd',30,15)
+    into product(product_name ,price ,quantity  )values('palkova',20,2)
+    select * from product
+5.  alter table product modify quantity default 1
+
+SELECT
+1.  select * from product
+2.  select product_name,price from product
+3.  select price from product where price>20
+4.  select * from product where vendor_id is NULL
+5.  update product set vendor_id=004 where vendor_id is NULL
+    select * from product where vendor_id<=5
+6.  update product set price =price*12/100
+    select * from product
+7.   select
+    product_id as"Product id",
+    product_name as"Product name",
+    price as "rate",
+    quantity as"Quantity",
+    vendor_id as "Vendor id" from product
+8.
